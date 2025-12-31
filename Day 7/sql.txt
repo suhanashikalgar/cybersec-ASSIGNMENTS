@@ -1,0 +1,32 @@
+Q1 What is Sql Injection?
+-> Sql Injection is an attack where malicios input is inserted into a database query to manipulate , read , or destroy data without authorization.
+
+Q2 Why input validation failure causes SQL Injection?
+-> Input Validation fails because if we keep same username as password it takes 1 true value performs or operation with that true value 
+
+Q3 Explain the payload:
+' OR '1'='1?
+-> If there is same username and password as login details then this payload is designed in such a way that it takes 1 true value and performs operations on that same value and bypasses the securtiy easily this is basic sql injection.
+
+Q4 What happens at database level when this payload is executed?
+-> In database it matches the value which has 1 true value as username and same as password then in all the tables it takes that values which have this same condition and performs those values at once which bypasses security.
+
+Q5 Why authentication was bypassed?
+->If we keep same username as password it takes 1 true value performs or operation with that true value. 
+
+Q6 Which logs would record SQL Injection attempts?
+ Apache access log or Error log
+ -> Apache access log 
+ 
+Q7 Which tools help prevent it?
+ -> fail2ban
+ 
+Q8 Role of:
+1. Fail2ban :- It automatically blocks ip that repeatdly attempts to perform brute-force   
+2. Rate limiting :- Rate Limiting restricts how many requests a user or ip can make in a given time to prevent abuse brute force attack.
+
+Q9 How to prevent SQL Injection?
+-> Prevent sql injection by using parameterized queries instead of dynamically building sql with user input.
+
+Q10 How logs help in early detection?
+-> Logs help in early detection by revealing abnormal patterns,errors,or repeated failures that indicate attacks or system issues befor they esclate.

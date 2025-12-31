@@ -1,0 +1,27 @@
+Q1 Explain r,w,x?
+-> r- for reading a file we use r as a permissions 
+-> w- for writing a file we use w as a permissions
+-> x- for executing a file we use x as a permissions
+
+Q2 What happens if permissions are set to 777?
+-> If we set permsissions to 777 we give all the permisions to users,groups,ad others.
+
+Q3 How does permissions help in securing data ?
+-> We cannot give all permissions to users and groups and other so we set permisions via chmod command to keep our whole system secure.
+
+Q4 what does x field indicate ?
+-> X field indicate encrpted information of user such as password.
+
+Q5 why are passwords not stored in /etc/passwd?
+-> The passwords are not stored in this specific file because any one can access this file or contents of file by nano command.
+
+Q6 why should root ssh login be disabled?
+-> Because allowing root ssh login gives attackers a direct permission or login details and can allow brute force easily.
+
+Q7 what is service in linux?
+-> A Service in linux is basically where you  can perform any task or check status of a task or run any part of a program.
+
+Q8 Differnce bettween Start amd Enable ?
+-> Start is use for starting a service in linux
+Enable is used for starting a service whenever the machine is booted/restarted etc
+
